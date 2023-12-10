@@ -47,15 +47,16 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.header-border {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
   justify-content: space-between;
   align-items: center;
 }
 .header-nav {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
 .logo {
@@ -66,6 +67,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .studio {
   color: #2e2f42;
@@ -107,7 +109,7 @@ img {
 }
 .hero {
   background-color: #2e2f42;
-  padding: 188px 316px;
+  padding: 188px 0;
 }
 .hero-title {
   color: #fff;
@@ -117,6 +119,8 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  max-width: 496px;
+  margin-left: 316px;
   margin-bottom: 48px;
 }
 .hero-button {
@@ -130,6 +134,11 @@ img {
   letter-spacing: 0.64px;
   display: block;
   margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -158,6 +167,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+.abaut-li {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .team {
   background-color: #f4f4fd;
 }
@@ -177,9 +189,10 @@ img {
 }
 .list {
   background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-segn {
-  margin-top: 32px;
+  padding: 32px 0;
 }
 .team-titles {
   text-align: center;
@@ -195,7 +208,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin-bottom: 32px;
 }
 .portf {
   background-color: #fff;
@@ -242,6 +254,10 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-studio {
   color: #f4f4fd;
 }
@@ -251,5 +267,4 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   width: 264px;
-  margin-top: 8px;
 }
